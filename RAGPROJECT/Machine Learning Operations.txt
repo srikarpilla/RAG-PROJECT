@@ -1,0 +1,129 @@
+Machine Learning Operations
+
+The basic introduction combines of what exactly MLOPS and its auxiliaries. Moreover, what exactly it is.
+Definition:
+Machine learning operations (MLOps) is the development and use of machine learning models by development operations (DevOps) teams. 
+Machine Learning Operations involves a set of processes or rather a sequence of steps implemented to deploy an ML model to the production environment. There are several steps to be undertaken before an ML Model is production ready. These processes ensure that your model can be scaled for a large user base and perform accurately.
+
+What is the use of the MLOps?
+
+Till now, we have created all the MLOPs model and trained a lot of models, tested them and done all the aspects related to machine learning aspects. But what's the use to it? Where it is being utilized.
+Here is where the MLOPs comes into play.:
+Creating an ML model that can predict what you want it to predict from the data you have fed is easy, but creating a model that is reliable, fast, accurate, pinpoint and can be used by many users in difficult, isn't it?
+So, that's where the MLOPs comes into the play:
+•	 These models that rely on large amount of data, are very difficult for a single person to be handled and tracking their development or usage.
+•	Since, due to having a lot of data, even if there is small tweak in the parameters it can result in the enormous difference in the results and accuracy.
+•	Now, feature engineering is another hectic task that would come up with the large dataset, because we need to keep the track of the features with which the model is working.
+•	Monitoring the model isn't easy like monitoring a software performance.
+•	Debugging the ML model is extremely painful.
+•	Now, here comes the major problem. Since, we guys are working with the real-world data for predictions and all other aspects. So as the real-world data keeps on updating the model should also keep updating itself. This means we need to keep the track of the new data change and accordingly we need to make sure that model learn them.
+If we guys, take a funny example, as developer we always give excuse, it's working on my end....
+This is not what we have to do, here in MLOps.
+
+
+DevOps vs MLOps
+
+So, in the definition itself, we talked about the part of DevOps. So, what exactly we mean by this terminology of DevOps. 
+Discussion on the DevOps
+It is the process to build and deploy the software application simultaneously. Now you all would think then how the MLOps is different than this, because as conveyed seems to us that these both things are pretty much the same!!
+a) What is DevOps?
+It is a mixture / combination of development and operation to increase the efficiency, speed and security of software development and delivery compared to traditional processes. 
+Dev: Plan, Create, Verify, 
+Ops: Package, Release, Configure, Monitor
+
+ 
+
+DevOps can be best explained as people working together to conceive, build and deliver secure software at top speed. DevOps practices enable software development (dev) and operations (ops) teams to accelerate delivery through automation, collaboration, fast feedback, and iterative improvement.
+
+Now, once to deep dive into the concept of DevOps, you will also come across the terminology of Agile Development.
+
+Stages into DevOps
+The DevOps stages are targeted for developing a software application. You plan the features of application you want to release, write code, build the code, test it, create a deployment plan and deploy it. Then, eventually, we can work with the part where we can monitor the infrastructure where the application has been deployed. And this process will keep on going until the application is fully developed.
+
+Before going onto deployment, the code goes through multiple procedures: plan, code, build, test, release, deploy, operate, monitor.
+
+Under the code part, we have version control and source code.
+In the build process, we have development and automation.
+In test, there is quality analysis and control.
+In release, here comes to most important aspects of DevOps, the CI/CD (Continuous Integration and Development).
+Inside deploy, we have IAAS, provisioning, Configuration Management.
+In operate, virtualization and containerization.
+Now monitoring comes with the part of Logging and Visualization.
+
+But in the part of Machine Learning Operations, the things work little differently. We implement the following stages:
+
+1.	Scoping: Here we try to define the project that means, here we try to check if the problem requires Machine Learning to solve it. While performing the requirement analysis, we check if the necessary data is available. Here we try to verify that if the data provided is biased or not biased and based on the to that we formulate the POC (Proof of Concept for the same). Moreover, we also try to check whether it reflects the objective to the program or not, and its real-world use cases.
+
+2.	Data Engineering: We all are very much aware about this stage isn’t it. The stage that is as easy as it could be and as complex as it could be. Here we collect data, establish the relationship between data, format the data, label the data and organize the data. And hence this makes this stage the most crucial stage in the entire process of the Machine Learning Operations.
+
+3.	Modelling: Now, comes the part that is the most interesting one. Creation of the Machine Learning Model. We train the model with the processed data. Perform the predictions, error assessment, define the error measurement and track the performance of the model.
+
+4.	Deployment: In this stage, the pack the model, just like we package the item before gifting it to someone else. Then this packed or wrapped code or model of yours gets deployed on to the cloud or any edge devices as per the requirements. When we are talking about the packaging, we are basically talking about the model being wrapped with an API server exposing the REST or gRPC access points using which users can access applications or maybe a docker container could be deployed on the cloud infrastructure or may be the application could be deployed on the any server-less cloud platform, or a mobile application for edge-based models.
+
+5.	Monitoring: Once the gift yours has been delivered, then what’s next. You try to capture the reaction of the individual to whom you have gifted that gift. Same happens here as well, once the application gets deployed, we monitor the infrastructure to maintain and update the model. This stage has the components like:
+
+
+
+
+Process of Building the DevOps:
+1.	Code: Here, we use the version control system in order to collaborate with the other team members.
+2.	Build: Here we write the code in high level language making sure that the code performs the required tasks and then gets
+
+3.	Monitoring the space / infrastructure where we have deployed: For the load, utilization, storage and health, we monitor the infrastructure. This tells us about the environment where the ML model is being deployed.
+
+4.	Monitoring the model’s performance, accuracy, errors and bias. This tells us about the model performance, if the model is performing well, as expected, valid for the real-world scenarios or not.
+
+This will not be much beneficial for some of the particular 
+as some models might require learning from the user inputs and predictions it makes. This lifecycle is valid for most of the ML use cases.
+
+
+
+UNDERSTANDING THE CI/CD PIPELINE
+
+In development, whenever we update the code, we want that the code should be updated everywhere it is being used, ensuring that each user is having the same functionality of it, on their respective devices. Now this seems as easy as it could be but is as complicated as it could be.
+
+CI/CD ensures that the integration and delivery of incremental changes to a live application. It is triggered when by a new update of version control system. This integration helps the system to go through all the stages until they safely reach the production environment.
+
+The Integration pipeline focuses on the initial stages of software delivery, encompassing tasks like building, testing, and packaging the application. On the other hand, the Deployment pipeline ensures the smooth deployment of new software packages in both testing and production environments.
+Why are we using this concept over here in Machine Learning?
+
+Imagine you're baking a cake. The traditional way involves tasting the batter as you go, adjusting ingredients, and hoping the final cake turns out right. This can be messy and unpredictable, especially if different people bake it with slightly different methods.
+
+The "immutable" way is like following a strict recipe without any changes. You measure all the ingredients precisely, mix them in a specific order, and bake for the exact time. This ensures the cake will always turn out the same, regardless of who bakes it.
+
+Applying thing over here:
+
+Traditional Approach: Data scientists work on their own laptops, using their preferred tools and versions. This can lead to unexpected changes in model behaviour when someone else tries to run the same analysis.
+Immutable / Newer Approach: Everyone follows a standardized process with pre-defined tools and versions. This removes the risk of inconsistencies and makes it easier to understand and fix problems.
+The benefits of following an "immutable" process:
+
+Reproducible results: You can be confident that any changes in model behaviour are due to actual data or code changes, not accidental differences in setups.
+Easier troubleshooting: It's simpler to pinpoint the source of issues when everyone is using the same tools and steps.
+Improved collaboration: Different data scientists can easily share and understand each other's work.
+Think of it like building a Lego set. Each person gets the same instructions and pieces, resulting in the same finished product every time. This makes teamwork and consistency much easier.
+
+Continuous Integration / Continuous Delivery (CI/CD), originating from and gaining prominence in Software Development, is centred around the idea of regularly delivering incremental changes to a live application via an automated process of rebuilding, retesting, and redeploying.	
+
+In contrast to traditional CI/CD pipelines for standard software applications, Machine Learning introduces two additional dimensions: Model and Data. While conventional software engineering practices revolve around code, ML involves extensive codebases alongside the management of substantial datasets and models to extract actionable insights.
+
+Designing an ML system involves grappling with challenges like:
+
+•	Storing model artifacts and enabling teams to track experiments with their metadata for result comparability and reproducibility.
+
+•	Handling often large and rapidly changing datasets. In addition to monitoring model performance from an application standpoint, ML demands vigilance in tracking data changes and adjusting models accordingly.
+
+ML systems demand consistent monitoring for performance and data drift. When model accuracy dips below a set baseline or data experiences concept drift, the entire system must undergo another cycle. This means replicating all steps, from data validation to model training and evaluation, testing, and deployment. This underscores why ML systems stand to gain significantly from automated pipelines, especially in the context of CI/CD.
+Exploring the Machine Learning Lifecycle
+
+ 
+
+
+Now we learn what infrastructure setup we would need for a model to be deployed in production. You can see in the above picture, ML code is only a small part of it. Let us understand the components one by one.
+Data Collection — This step involves collecting data from various sources. ML models require a lot of data to learn. Data collection involves consolidating all kinds of raw data related to the problem. i.e Image classification might require you to collect all available images or scrape the web for images. Voice recognition may require you to collect tons of audio samples.
+Data Verification — In this step we check the validity of the data, if the collected data is up to date, reliable, and reflects the real world, is it in a proper consumable format, is the data structured properly.
+Feature Extraction — Here, we select the best features for the model to predict. In other words, your model may not require all the data in its entirety for discovering patterns, some columns or parts of data might be not used at all. Some models perform well when a few columns are dropped. We usually rank the features with importance, features with high importance are included, lower ones or near zero ones are dropped.
+Configuration — This step involves setting up the protocols for communications, system integrations, and how various components in the pipeline are supposed to talk to each other. You want your data pipeline to be connected to the database, you want your ML model to connect to database with proper access, your model to expose prediction endpoints in a certain way, your model inputs to be formatted in a certain way. All the necessary configurations required for the system need to be properly finalized and documented.
+ML Code — Now we, come to the actual coding part. In this stage, we develop a base model, which can learn from the data and predict. There are tons of ML libraries out there with multiple language support. Ex: tensorflow, pytorch, scikit-learn, keras, fast-ai and many more. Once we have a model, we start improving its performance by tweaking the hyper-parameters, testing different learning approaches until we are satisfied that the model is performing relatively better than its previous version.
+
+
+ 
