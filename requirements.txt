@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+cohere
+nltk
+pypdf
+beautifulsoup4
+scikit-learn
+numpy
